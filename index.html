@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!--Allows special characters-->
+    <title>Assignment Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Assignment Tracker</h1>
+
+        <div class="form"> <!--where assigmnets are entered -->
+            <input type="text" id="assignmentName" placeholder="Assignment Name">
+
+            <input type="date" id="dueDate">
+
+            <label>Highlight Color:</label>
+
+            <input type="color" id="assignmentColor" value="#87CEEB">
+
+            <input
+                type="text"
+                id="colorName"
+                placeholder="Save color as..."
+            >
+
+            <button id="saveColorBtn">
+            Save Color
+            </button>
+
+            <select id="savedColorList">
+                <option value="">Choose Saved Color</option>
+            </select>
+
+            <button id="deleteColorBtn">
+                Delete Color
+            </button>
+
+            <button id="addBtn">Add Assignment</button>
+        </div>
+
+        <div id="assignmentList"></div> <!--list area -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
